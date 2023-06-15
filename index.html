@@ -17,10 +17,10 @@
     <div class="initial-container">
         <div class="row valign-wrapper" style="height: 90vh">
             <div class="col s12 center-align">
-                <h1 class="card-panel teal lighten-2 rounded-corners">
+                <h1 class="card-panel blue darken-2 rounded-corners">
                     Welcome to <strong>Weather Flix</strong>
                 </h1>
-                <button id="enter-home-btn" class="waves-effect waves-light btn-large rounded-corners">
+                <button id="enter-home-btn" class="waves-effect waves-light btn-large rounded-corners blue darken-2">
                     <strong>Enter Site</strong>
                 </button>
             </div>
@@ -31,18 +31,18 @@
     <main id="home" class="display-none" style="height: 100vh">
         <!-- NAVBAR -->
         <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
+            <div class="nav-wrapper blue darken-2">
+                <a href="#!" class="brand-logo">Weather Flix</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="">Favourites</a></li>
-                    <li><a href="">Weather</a></li>
+                <ul class="right hide-on-med-and-down m-r2">
+                    <li><a href="" class="custom-nav-link">Favourite Movies</a></li>
+                    <li><a href="" class="custom-nav-link">Weather</a></li>
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="">Favourites</a></li>
+            <li><a href="">Favourite Movies</a></li>
             <li><a href="">Weather</a></li>
         </ul>
 
@@ -52,14 +52,20 @@
                 <div class="col s12 m2 valign-wrapper center-align">
                     <div class="container s12 m2">
                         <!-- WEATHER CONTENT -->
-                        <h4>Left Section</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div id="weather-container">
+                            <h5>Current Weather:</h5>
+                            <p id="weather-description"></p>
+                            <p id="temperature"></p>
+                            <p id="humidity"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col s12 m10 center-align container">
                     <!-- MOVIE CONTENT -->
-                    <h1>Main Content</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div>
+                        <h1></h1>
+                        <h4>We recommend...</h4>
+                    </div>
                 </div>
             </div>
         </div>

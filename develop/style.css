@@ -13,7 +13,26 @@
 }
 
 .container-fw {
-    background-color: lightblue;
+    background-color: #add8e6;
     width: 100%;
     /* height: 94vh; */
+}
+
+/* NAV LINK PADDING */
+.custom-nav-link {
+    margin-right: 40px;
+}
+
+.custom-nav-link:last-child {
+    margin-right: 15px;
+}
+
+/* BUTTON SMOOTH TRANSITION */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+#home {
+    animation: fadeIn 1s ease-in;
 }
